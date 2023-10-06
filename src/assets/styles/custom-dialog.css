@@ -1,0 +1,5 @@
+/* custom-overlay.css */
+.custom-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    /* Add other custom styles here */
+}

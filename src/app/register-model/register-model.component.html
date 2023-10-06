@@ -1,0 +1,49 @@
+<form class="register-form" [ngClass]="{'current': registerLogin}">
+    <h1>Sign up</h1>
+    <small>Already have an account? <a href="javascript:void(0)" (click)="showLogin()">Log in </a> </small>
+    <mat-form-field>
+      <input matInput placeholder="Username" [(ngModel)]="username" name="username">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput  [type]="hidePassword ? 'password' : 'text'" placeholder="Password" [(ngModel)]="password"
+        name="password">
+      <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+        <mat-icon *ngIf="hidePassword">visibility_off</mat-icon>
+        <mat-icon *ngIf="!hidePassword">visibility</mat-icon>
+      </button>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Email" [(ngModel)]="email" name="email">
+    </mat-form-field>
+    <!-- <div class="example-container">
+      <mat-form-field>
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [(ngModel)]="email" name="email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div> -->
+  
+    <button mat-raised-button color="primary" (click)="register()">Sign up</button>
+  </form>
+
+
+  <form class="login-form" [ngClass]="{'current': loginRegister}">
+    <h1>Login</h1>
+    <small>Already have an account? <a href="javascript:void(0)" (click)="showLogin()">Register</a> </small>
+    <mat-form-field>
+      <input matInput placeholder="Username" [(ngModel)]="username" name="username">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput [type]="hidePassword ? 'password' : 'text'" placeholder="Password" [(ngModel)]="password"
+        name="password">
+      <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+        <mat-icon *ngIf="hidePassword">visibility_off</mat-icon>
+        <mat-icon *ngIf="!hidePassword">visibility</mat-icon>
+      </button>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" (click)="login()">Login</button>
+  </form>

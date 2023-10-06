@@ -1,0 +1,39 @@
+<!-- src/app/services/services.component.html -->
+
+<section id="services" class="services-area services-eight">
+    <!-- Section Title -->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Services</h6>
+              <h2 class="fw-bold">Our Best Services</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Service Cards -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6" *ngFor="let service of services">
+          <div class="single-services">
+            <div class="service-icon">
+              <i [class]="service.icon"></i>
+            </div>
+            <div class="service-content">
+              <h4>{{ service.title }}</h4>
+              <p>{{ service.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

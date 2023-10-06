@@ -1,0 +1,54 @@
+<!-- Start Pricing Area -->
+<section id="pricing" class="pricing-area pricing-fourteen">
+    <!-- Start Section Title Five -->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Pricing</h6>
+              <h2 class="fw-bold">Pricing & Plans</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section Title Five -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12" *ngFor="let plan of pricingPlans">
+          <div class="pricing-style-fourteen">
+            <div class="table-head">
+              <h6 class="title">{{ plan.title }}</h6>
+              <p>{{ plan.description }}</p>
+              <div class="price">
+                <h2 class="amount">
+                  <span class="currency">{{ plan.price }}</span>
+                </h2>
+              </div>
+            </div>
+  
+            <div class="light-rounded-buttons">
+              <a href="javascript:void(0)" class="btn primary-btn-outline">
+                Start free trial
+              </a>
+            </div>
+  
+            <div class="table-content">
+              <ul class="table-list">
+                <li *ngFor="let feature of plan.features">
+                  <i class="lni lni-checkmark-circle"></i> {{ feature }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Area -->
+  

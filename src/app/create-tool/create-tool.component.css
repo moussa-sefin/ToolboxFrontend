@@ -1,0 +1,33 @@
+/* .form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.form-field {
+  margin-right: 10px;
+}
+
+.full-width {
+  flex: 1;
+}
+
+.half-width {
+  flex: 0.5;
+}
+
+.form-field textarea {
+  width: 100%;
+}
+
+.form-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+ */
