@@ -1,0 +1,21 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 40px 0 40px;
+ }
+
+ .login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 40px 0 40px;
+    
+ }
+
+.current{
+    display: none;
+ }
+
+ 
+ .mat-form-field {
+ 
+ }

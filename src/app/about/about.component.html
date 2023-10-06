@@ -1,0 +1,76 @@
+<!-- about.component.html -->
+<section id="about" class="about-area about-five">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12">
+          <div class="about-image-five">
+            <svg class="shape" width="106" height="134" viewBox="0 0 106 134" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <!-- ... (Paste the SVG code here) ... -->
+            </svg>
+            <img src="assets/images/about/about-img1.jpg" alt="about" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="about-five-content">
+            <h6 class="small-title text-lg">OUR STORY</h6>
+            <h2 class="main-title fw-bold">Our team comes with the experience and knowledge</h2>
+            <div class="about-five-tab">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link " id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
+                    [ngClass]="{'active':!WhoWeAre}" type="button" role="tab" aria-controls="nav-who" aria-selected="true" (click)="switchToWhoTab()">Who We Are</button>
+                  <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
+                    [ngClass]="{'active':!ourVision}" type="button" role="tab" aria-controls="nav-vision" aria-selected="false" (click)="switchToVisionTab()">our Vision</button>
+                  <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
+                   [ngClass]="{'active':!ourHistory}" type="button" role="tab" aria-controls="nav-history" aria-selected="false" (click)="switchToHistoryTab()">our History</button>
+
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+               
+                <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab" [ngClass]="{'show-content':WhoWeAre}">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, look like readable English.</p>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some 
+                    form,
+                    by injected humour. 1111 </p>
+                </div>
+
+                <div class="tab-pane fade show active" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab" [ngClass]="{'show-content':ourVision}">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, look like readable English.</p>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some 
+                    form,
+                    by injected humour. 2222 </p>
+                </div>
+          
+                <div class="tab-pane fade show active"  id="nav-history " role="tabpanel" aria-labelledby="nav-history-tab" [ngClass]="{'show-content':ourHistory}">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, look like readable English.</p>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
+                    form,
+                    by injected humour. 333 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+ 
+  

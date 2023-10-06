@@ -1,0 +1,62 @@
+<body class="g-sidenav-show">
+    <!-- === side navigation ===-->
+    <app-user-sidenavigaton-bar (toolCreateEvent)="toolCreateReceiver($event)" (passwdChangeEvent)="passwordChangeReceiveMessage($event)" (profileEditEvent)="profileEditorReceiveMessage($event)" (toolsListEvent)="toolsListReceiveMessage($event)" (userFavoliteEvent)="favoriteReceieMessage($event)" (userInfoEvent)="infoReceiveMessage($event)" (toolTableEvent)="tableReceiveMessage($event)" (userSettingsEvent)="settingReceiveMessage($event)" class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start position-absolute ms-3 bg-white loopple-fixed-start" id="sidenav-main"></app-user-sidenavigaton-bar>
+    <!--  ==== end side navigation === -->
+    <div class="main-content" id="panel">
+        <!-- === top navigation === -->
+        <app-user-topnavigaton-bar></app-user-topnavigaton-bar>
+        <!-- end top navigation -->
+        <div class="container-fluid pt-3">
+            <div class="row removable mb-4">
+                <!-- === tool create === -->
+                <app-create-tool [ngClass]="{'tagle-show':viewToolCreate}" class="col-12 col-xl-8 mb-4" ></app-create-tool>
+                <!-- === end tool create === -->
+                <!-- === Change Password === -->
+                <app-user-password-change [ngClass]="{'tagle-show':viewPasswordChange}" class="col-12 col-xl-8 mb-4" ></app-user-password-change>
+                <!-- === end change password === -->
+                <!-- === profile editor === -->
+                <app-user-profile-editor [ngClass]="{'tagle-show':viewProfileEditor}" class="col-12 col-xl-8 mb-4"></app-user-profile-editor>
+                <!-- === end profile editor=== -->
+             
+                 <!-- === user tool table === -->
+                 <app-table-tools [ngClass]="{'tagle-show':viewToolTable}"  class="col-12 col-xl-8 mb-4"></app-table-tools>
+                 <!-- === end user tool table === -->
+ 
+                 <!-- === favorite tools === -->
+                 <app-user-favorite [ngClass]="{'tagle-show':viewFavorite}"  class="col-12 col-xl-8 mb-4"></app-user-favorite>
+                 <!-- === end favorite tools === -->
+
+                 <!-- === tools List === -->
+
+                 <app-toollist [ngClass]="{'tagle-show':viewToolsList}" class="col-12 col-xl-8 mb-4" ></app-toollist>
+                 <!-- === end tools List === -->
+
+                <!-- === user settings ==== -->
+                <app-user-setting-dashboard [ngClass]="{'tagle-show':viewsettings}"  class="col-12 col-xl-4 mb-4"></app-user-setting-dashboard>
+                <!-- === end user settings === -->
+
+                <!-- === user profile informations === -->
+                <app-user-information-dashboad [ngClass]="{'tagle-show':viewInfo}"  class="col-12 col-xl-4 mb-4"></app-user-information-dashboad>
+                <!-- === end profile informations === -->
+
+                <!-- === user conversations === -->
+                <app-user-conversation  class="col-12 col-xl-4 mb-4"></app-user-conversation>
+                <!-- === end user conversation === -->
+                   
+            
+            </div>
+        </div>
+        <!-- === user dashboard footer === -->
+        <app-user-footer-dashboad class="footer pt-3 pb-4 "></app-user-footer-dashboad>
+        <!-- === end user dashboard footer === -->
+    </div>
+    <div style="display: none;"
+        class="loopple-alert loopple-alert-gradient-dark loopple-alert-dismissible loopple-fade loopple-position-fixed loopple-z-index-9999 loopple-bottom-2 loopple-mx-auto loopple-text-center loopple-right-0 loopple-left-0 loopple-w-50"
+        role="alert"><strong>View and edit your project online</strong><a
+            class="loopple-btn loopple-btn-white loopple-ml-2" href="http://localhost:4200/" target="_blank">Back
+            Home</a><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">×</span></button></div>
+
+
+
+</body>

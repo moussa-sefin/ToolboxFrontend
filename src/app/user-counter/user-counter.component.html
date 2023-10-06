@@ -1,0 +1,14 @@
+
+<div class="card flex justify-content-center">
+    <form [formGroup]="formGroup">
+        <p-knob formControlName="value"></p-knob>
+    </form>
+</div>
+
+<div class="card flex justify-content-center">
+    <p-knob [(ngModel)]="value" [size]="200"></p-knob>
+</div>
+
+<div class="card flex justify-content-center">
+    <p-knob [(ngModel)]="value" [readonly]="true"></p-knob>
+</div>
