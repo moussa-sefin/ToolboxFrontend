@@ -108,37 +108,8 @@
           }
         }
       }
-    },
-    "ngx-admin-master": {
-      "root": "projects/ngx-admin-master",
-      "sourceRoot": "projects/ngx-admin-master/src",
-      "projectType": "application",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/ngx-admin-master",
-            "index": "projects/ngx-admin-master/src/index.html",
-            "main": "projects/ngx-admin-master/src/main.ts",
-            "tsConfig": "tsconfig.json"
-            
-          }
-          
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "ngx-admin-master:build",
-            "proxyConfig": "projects/ngx-admin-master/proxy.config.json"
-            
-          }
-         
-        }
-
-      }
-    
     }
+   
     
   }
 }
