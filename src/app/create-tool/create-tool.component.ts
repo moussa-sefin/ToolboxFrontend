@@ -118,22 +118,36 @@ export class CreateToolComponent implements OnInit {
   }
   
   
-    this.toolService.createTool(data).subscribe(
-      (response) => {
-        // Handle the success response here, e.g., show a success message
-        console.log('Tool created successfully', response);
-      },
-      (error) => {
-        // Handle the error response here, e.g., show an error message
-        console.error('Error creating tool:', error);
+    
+  this.toolService.createTool(data).subscribe(
+    (response) => {
+      // Handle the success response here, e.g., show a success message
+      console.log('Tool created successfully', response);
+
+      // Show a success message to the user
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Success',
+        detail: 'Tool created successfully',
+      });
+    },
+    (error) => {
+      // Handle the error response here, e.g., show an error message
+      console.error('Error creating tool:', error);
 
       // Display field errors in the console
       if (error.field_errors) {
         console.error('Field Errors:', error.field_errors);
       }
 
-      }
-    );
+      // Show an error message to the user
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'Error creating tool',
+      });
+    }
+  );
   }
   
   
